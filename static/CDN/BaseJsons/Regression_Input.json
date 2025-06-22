@@ -1,0 +1,91 @@
+{
+    "Metadata": {
+        "Username": "sahithi.thamatam.733878@gmail.com",
+        "Workspace": "Logistics",
+        "FileName": "House.Habitation.csv"
+    },
+    "Model": {
+        "Type": "Regression",
+        "Category": "Supervised",
+        "SelectedAlgorithm": "RandomForest",
+        "TargetFeature": "modelName"
+    },
+    "Generic" : {
+        "Training": 70,
+        "Testing": 15,
+        "Validation": 15,
+        "Iteration": 100,
+        "Sizing": "false",
+        "Storage": "Model and Metadata",
+        "Format": "Pickle"
+    }, 
+   
+    
+
+    "RandomForest": {
+        "RFMaxDepthRange":"10-50",
+        "RFMaxDepthSteps":10,
+        "RFMinSamplesLeafRange":"2 - 10",
+        "RFMinSamplesLeafSteps":10,
+        "RFMinSampleSplitRange":"2 - 10",
+        "RFMinSampleSplitSteps":10,
+        "RFNEstimatersRange":"10 - 150",
+        "RFNEstimatersSteps":20
+    },
+    "ElasticNet": {
+        "ElasticNetAlphaRange":"0.01 - 1",
+        "ElasticNetAlphaSteps":0.05,
+        "ElasticNetMaxIterRange":"10 - 150",
+        "ElasticNetMaxIterSteps":10,
+        "ElasticNetWarmStart":false,
+        "ElasticNetL1_RatioSteps":0.5
+    },
+    "PartialLeastSquare": {
+        "PLSMaxIterRange":"100 - 700",
+        "PLSMaxIterSteps":10
+    },
+    "DecisionTree": {
+        "DTMaxDepthRange":"2-20",
+        "DTMaxDepthSteps":1,
+        "DTMinSamplesLeafRange":"2 - 10",
+        "DTMinSamplesLeafSteps":1,
+        "DTMinSamplesSplitRange":"2 - 10",
+        "DTMinSamplesSplitSteps":1
+    },
+    "Bayesian": {
+        "BayesianNIterRange":"10 - 50",
+        "BayesianNIterSteps":10,
+        "BayesianAlpha_1Range":"-6 - -4",
+        "BayesianAlpha_2Range":"-6 - -5"
+    },
+    "Ridge": {
+        "RidgeAlphaRange":"0.01 - 1",
+        "RidgeAlphaSteps":0.05,
+        "RidgeMaxIterRange":"10 - 300",
+        "RidgeMaxIterSteps":10
+    },
+    "Lasso": {
+        "LassoAlphaRange":"0.01 - 0.05",
+        "LassoAlphaSteps":0.05,
+        "LassoMaxIterRange":"10 - 50",
+        "LassoMaxIterSteps":10,
+        "LassoWarmStart":false
+    },
+    "Polynomial": {
+        
+    },
+    "WeightedLinear": {
+        
+    },
+    "Linear": {
+        
+    },
+    "Metrics": {
+        "Accuracy": true,
+        "Recall":true,
+        "Precision":true,
+        "F1-Score":true,
+        "AUC":true,
+        "ChallengingMetric": "Accuracy"
+    }
+}

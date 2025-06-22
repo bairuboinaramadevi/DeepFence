@@ -1,0 +1,24 @@
+{
+    "Metadata": {
+        "Username": "sahithi.thamatam.733878@gmail.com",
+        "Workspace": "Logistics",
+        "FileName": "Company.MarutiSales.csv"
+    },
+    "Model": {
+        "Type": "Anomaly",
+        "Category": "Supervised",
+        "SelectedAlgorithm": "auto",
+        "Frequency":{
+            "Daily":"Yes",
+            "Weekly":"Yes",
+            "Monthy":"No",
+            "Quarterly":"Yes",
+            "Yearly":"No"
+         },
+         "DateColumn":"order date (DateOrders)"
+    },
+    "Generic" : {
+        "Dimensions": "cid", 
+        "Measures": "Sales Amount"
+    }
+}

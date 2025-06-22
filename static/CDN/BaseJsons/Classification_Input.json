@@ -1,0 +1,71 @@
+{
+    "Metadata": {
+        "Username": "sahithi.thamatam.733878@gmail.com",
+        "Workspace": "Logistics",
+        "FileName": "Company.MarutiSales.csv"
+    },
+    "Model": {
+        "Type": "Classification",
+        "Category": "Supervised",
+        "SelectedAlgorithm": "RandomForest",
+        "TargetFeature": "modelName"
+    },
+    "Generic" : {
+        "Training": 70,
+        "Testing": 15,
+        "Validation": 15,
+        "Iteration": 100,
+        "Sizing": "false",
+        "Storage": "Model and Metadata",
+        "Format": "Pickle"
+    },
+    "RandomForest": {
+        
+        "RFNEstimatorsRange": "62 - 263",
+        "RFNEstimatorsSteps": 10,
+        "RFBootstrap": "True",
+        "RFMaxDepthRange": "66 - 185",
+        "RFMaxDepthSteps": 1,
+        "RFMinSamplesLeafRange": "2 - 10",
+        "RFMinSamplesLeafSteps": 2,
+        "RFMinSampleSplitRange": "10 - 100",
+        "RFMinSampleSplitSteps": 10
+    },
+    "NaiveBayes": {
+        "NaiveBayesType":"GaussianNB"
+    },
+    "KNN": {
+        "KNNNeighboursRange":"5 - 10",
+        "KNNNeighboursSteps":1
+    },
+    "DecisionTree": {
+        "DTMaxDepthRange":"2 - 20",
+        "DTMaxDepthSteps":1,
+        "DTMinSamplesLeafRange":"2 - 20",
+        "DTMinSamplesLeafSteps":2,
+        "DTMaxLeafNodesRange":"10 - 100",
+        "DTMaxLeafNodesSteps":10,
+        "DTMinSampleSplitRange":"2 - 10",
+        "DTMinSampleSplitSteps":1
+    },
+    "SupportVectorMachine": {
+        
+    },
+    "StochasticGradientDescent": {
+        
+    },
+    "VotingEnsemble": {
+        
+    },
+    "LogisticRegression": {
+        
+    },
+    "Metrics": {
+        "Accuracy": true,
+        "Recall":true,
+        "Precision":true,
+        "F1-Score":true,
+        "AUC":true,
+        "ChallengingMetric": "Accuracy"
+    }
+}
