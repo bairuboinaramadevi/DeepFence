@@ -1,135 +1,138 @@
-Running Your Application Locally
-This guide provides step-by-step instructions to set up and run your application on your local machine using VS Code, Python, and SQLiteDB.
+# DeepFence
 
-Prerequisites
-Before you begin, ensure you have the following installed:
+This guide provides step-by-step instructions to set up and run your application on your local machine using **VS Code**, **Python**, and **SQLite**.
 
-Git: For cloning the repository.
+---
 
-Download Git
+## 🛠 Prerequisites
 
-Python & pip: The programming language and its package installer.
+Make sure the following are installed:
 
-Download Python
+- **Git**: Version control tool  
+  👉 [Download Git](https://git-scm.com/downloads)
 
-VS Code: Your integrated development environment (IDE).
+- **Python & pip**: Programming language and its package installer  
+  👉 [Download Python](https://www.python.org/downloads/)
 
-Download VS Code
+- **VS Code**: Code editor / IDE  
+  👉 [Download VS Code](https://code.visualstudio.com/download)
 
-SQLite: This application uses SQLite, which is a file-based database. No separate server installation is typically required as it's often bundled with Python or managed by your framework (e.g., Django, Flask).
+- **SQLite**: No separate installation is usually needed—it’s bundled with Python or your framework (e.g., Django, Flask)
 
-Recommended VS Code Extensions
-For a better development experience in VS Code, consider installing these extensions:
+---
 
-Python (by Microsoft): Rich support for Python development—linting, debugging, IntelliSense, and more.
+## 💡 Recommended VS Code Extensions
 
-Pylance: Fast static type checking and feature-rich language support for Python.
+For a smoother development experience:
 
-SQLite (e.g., "SQLite" by alexcvzz): Browse and manage SQLite databases directly within VS Code.
+- **Python** (by Microsoft)
+- **Pylance**
+- **SQLite** (e.g., "SQLite" by alexcvzz)
 
-Setup Steps
-1. Clone the Repository
-Clone this repository to your local machine using Git:
+---
 
-bash
+## 🚀 Setup Steps
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/<your-username>/<your-repository-name>.git
 cd <your-repository-name>
 Replace <your-username> and <your-repository-name> with your actual GitHub details.
 
-2. Open in VS Code
-Open the cloned project folder in VS Code:
-
+2️⃣ Open in VS Code
 bash
+Copy
+Edit
 code .
-This command works if you have added VS Code to your PATH during installation.
+If code . doesn't work, open VS Code manually and go to File > Open Folder...
 
-Alternatively, open VS Code and go to File > Open Folder... and select the project directory.
-
-3. Install Python Dependencies
-It is highly recommended to use a Python virtual environment to manage project-specific dependencies.
-
-In your VS Code integrated terminal (or your system's terminal):
+3️⃣ Install Python Dependencies
+It's best to use a virtual environment:
 
 bash
-# 1. Create a virtual environment (named 'venv' conventionally)
+Copy
+Edit
+# Create a virtual environment
 python -m venv venv
 
-# 2. Activate the virtual environment
-#    On macOS/Linux:
+# Activate it
+# On macOS/Linux:
 source venv/bin/activate
-#    On Windows (Command Prompt):
+
+# On Windows (Command Prompt):
 venv\Scripts\activate.bat
-#    On Windows (PowerShell):
+
+# On Windows (PowerShell):
 .\venv\Scripts\Activate.ps1
 
-# 3. Install project dependencies from requirements.txt
+# Install dependencies
 pip install -r requirements.txt
-Note: If VS Code asks you to select a Python interpreter after opening the folder, choose the one inside your venv folder (e.g., venv/bin/python or venv\Scripts\python.exe).
+📝 Tip: If VS Code asks you to select a Python interpreter, choose the one inside your venv.
 
-4. Environment Configuration (If Applicable)
-If your application uses environment variables (e.g., for API keys, custom settings), you'll need to set them up.
-
-Look for a .env.example file in the project root.
-
-Copy it to .env:
+4️⃣ Environment Variables (If Applicable)
+If there's a .env.example file:
 
 bash
+Copy
+Edit
 cp .env.example .env
-Open .env in a text editor (within VS Code) and fill in the correct values for your local environment (e.g., any placeholder API keys).
+Edit .env and fill in any required variables like API keys, ports, etc.
 
-5. Database Setup (SQLite)
-Since this application uses SQLite, your database will typically be a single file (e.g., db.sqlite3 for Django).
+5️⃣ Database Setup (SQLite)
+No installation is needed for SQLite.
 
-No separate server installation is needed for SQLite.
+If your app uses database migrations:
 
-If your application uses database migrations (common with frameworks like Django or Flask-Migrate):
-
+For Django:
 bash
-# Ensure your virtual environment is active
-
-# For Django:
-python manage.py makemigrations   # If you made schema changes or added new apps
+Copy
+Edit
+python manage.py makemigrations
 python manage.py migrate
-
-# For Flask (if using Flask-Migrate, commands vary):
-# flask db init   (first time)
-# flask db migrate
-# flask db upgrade
-These commands will create the db.sqlite3 file (or whatever your database file is named) and set up the necessary tables.
-
-Running the Application
-Once all dependencies are installed and configuration is complete, you can start the application.
-
-Make sure your virtual environment is active in your VS Code terminal.
-
-Running from the VS Code Terminal
+For Flask (with Flask-Migrate):
 bash
-# Ensure your virtual environment is active if you've opened a new terminal
-# On macOS/Linux: source venv/bin/activate
-# On Windows: venv\Scripts\activate.bat
+Copy
+Edit
+flask db init       # only once
+flask db migrate
+flask db upgrade
+These commands will create the SQLite file (e.g., db.sqlite3) and tables.
 
+▶️ Running the Application
+Make sure your virtual environment is active before running the app.
+
+From Terminal
+bash
+Copy
+Edit
+# On macOS/Linux
+source venv/bin/activate
+
+# On Windows
+venv\Scripts\activate.bat
+
+# Run the app
 python <your_main_app_file>.py
+
 # For Django:
 python manage.py runserver
+
 # For Flask:
 flask run
-Running from VS Code's "Run and Debug" Feature
-Go to the Run and Debug view in VS Code (Ctrl+Shift+D or Cmd+Shift+D).
+From VS Code (Run and Debug)
+Open Run and Debug view (Ctrl+Shift+D / Cmd+Shift+D).
 
-If a launch.json configuration exists, select the appropriate configuration from the dropdown.
+Select the right config from dropdown (if launch.json exists).
 
-Click the green play button to start debugging or running the application.
+Press the green ▶️ Start button.
 
-If no launch.json exists, VS Code might prompt you to create one or allow you to run the current file directly.
+🌐 Accessing the App
+Once running, open your browser and go to:
 
-Accessing the Application
-Once the application is running, you can usually access it via your web browser or API client:
+http://localhost:8000 (Django default)
 
-Frontend/Backend API: Python web applications typically run on http://localhost:8000 or http://localhost:5000 by default. Check your console output for the exact URL.
+http://localhost:5000 (Flask default)
 
-Additional Tips
-For enhanced productivity, explore more Python-related VS Code extensions such as Jupyter and auto-formatters.
+Check your terminal for the exact URL and port.
 
-If you want to interactively explore your SQLite database, use the SQLite extension sidebar in VS Code.
-
-To run shell commands directly from your README.md, consider the "Runme" extension for VS Code, which allows you to execute code blocks in markdown files
