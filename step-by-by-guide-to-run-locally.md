@@ -26,7 +26,6 @@ Make sure the following are installed:
 For a smoother development experience:
 
 - **Python** (by Microsoft)
-- **Pylance**
 - **SQLite** (e.g., "SQLite" by alexcvzz)
 
 ---
@@ -36,9 +35,9 @@ For a smoother development experience:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repository-name>.git
-cd <your-repository-name>
-Replace <your-username> and <your-repository-name> with your actual GitHub details.
+git clone https://github.com/<your-username>/<your-repository-name>.git 
+cd <your-repository-name> #cd DeepFence
+Replace <your-username> and <your-repository-name> with your actual GitHub details.  ### https://github.com/bairuboinaramadevi/DeepFence.git
 
 2️⃣ Open in VS Code
 bash
@@ -84,12 +83,6 @@ No installation is needed for SQLite.
 
 If your app uses database migrations:
 
-For Django:
-bash
-Copy
-Edit
-python manage.py makemigrations
-python manage.py migrate
 For Flask (with Flask-Migrate):
 bash
 Copy
@@ -115,8 +108,6 @@ venv\Scripts\activate.bat
 # Run the app
 python <your_main_app_file>.py
 
-# For Django:
-python manage.py runserver
 
 # For Flask:
 flask run
@@ -129,8 +120,6 @@ Press the green ▶️ Start button.
 
 🌐 Accessing the App
 Once running, open your browser and go to:
-
-http://localhost:8000 (Django default)
 
 http://localhost:5000 (Flask default)
 
