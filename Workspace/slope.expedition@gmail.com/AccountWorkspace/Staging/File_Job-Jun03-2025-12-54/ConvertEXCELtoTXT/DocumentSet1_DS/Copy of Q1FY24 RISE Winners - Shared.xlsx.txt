@@ -1,0 +1,181 @@
+Nominee EmpNo	Segment	Nominee Name	Nominee MailId	Nominee DU	Nominee PU	Nominee Sub Unit	Nominee Unit	AwardType	Category	Certificate Delivery Location
+77461	Others	Pratibha Chilamkurti	Pratibha_C01	DNATPD	DNA	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1272979	CMT	Sparsh Vijay	sparsh.vijay	DNACMTMOD	DNACMT	DNADLY	DNA	Individual	Rookie of the Qtr	PUNE
+1098109	CMT	Bachu Alekya	bachu.alekya	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+776508	CMT	Geeta Rani Rallapalli	geeta.rallapalli	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1006832	CMT	Jyoti Rajaram Patil	jyoti.patil03	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	PUNE
+1141989	CMT	Ashok Radhakrishnan	ashok.radhakrishnan	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1040000	CMT	Sri Veera Satya Dharma Teja Mummidi	sri.mummidi	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+669744	CMT	Vennela Reddy	Vennela_Reddy	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1300957	CRL	Thota Prashanth	thota.prashanth02	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad SEZ
+1318837	CRL	Bhramaramba Mandhalapu	bhramaramba.m	DNACRLRT01	DNACRL	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad SEZ
+1269890	SURE	Gokula Gowtham V	gokula.v	DNASUREENR	DNASURE	DNADLY	DNA	Individual	Rookie of the Qtr	CHENNAI
+1301594	ANALYTICS	Ambuj Goyal	ambuj.goyal	ANADU01	ANALYTICS	DNADLY	DNA	Individual	Rookie of the Qtr	CHANDIGARH
+1316179	ANALYTICS	Gunjan Lavjibhai Shingala	gunjan.shingala	ANADU01	ANALYTICS	DNADLY	DNA	Individual	Rookie of the Qtr	Pune
+1315826	ANALYTICS	Rakesh Desu	rakesh.desu	ANADU01	ANALYTICS	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad SEZ
+1082499	CMT	Santhosh Sundar P	santhosh.p15	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+784046	CMT	Pradeepkumar Sreeramadasu	pradeepkumar.s01	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1179272	MFG	Palak Parihar	palak.parihar	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	CHANDIGARH
+665012	DNADATAGOV	Akriti Gupta	Akriti_Gupta02	DNAMDMCON	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	CHANDIGARH
+144172	DNACTO	Vasudev Sriramula	Vasudev_Sriramula	DNAARCH	DNACTO	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+728926	CMT	Anjaneyulu Jillellamudi	anjaneyulu.j	DNAHTCDU01	DNACMT	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+1268248	CMT	Rakesh Nadiminti	rakesh.nadiminti	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1288631	CMT	Jajitha Battula	jajitha.battula	DNADGSP	DNACTO	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad STP
+1086417	Others	Divya Murali	divya.murali01	HRBI	HRD	HRD	HRD	Individual	BEF Award	TRIVANDRUM
+19579	CMT	Mohan Babu Karnati	Mohan_Karnati	DNACMTDCLD	DNACMT	DNADLY	DNA	Individual	Eureka	Hyderabad STP
+189005	FS	Chandana Raghavendra Rao Sokke	Chandana_Sokke	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1149581	FS	Dyutimoy Kumar	dyutimoy.kumar	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1167343	FS	Swapnil Rajendra Masne	swapnil.masne	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	Pune
+1167358	FS	Sandij S K	sandij.k	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1298391	CRL	Subramanian Ramasamy	subramanian.r02	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Rookie of the Qtr	TRIVANDRUM
+1253028	DNADATAGOV	Subhajit Paul	subhajit.paul04	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+30479	CMT	Gigi Chandrasekharan Pillai	gigi_pillai	DNACMTDU02	DNACMT	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1177186	DNADATAGOV	Pratik Chevli	pratik.chevli	DNAMDMCOFE	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	PUNE
+1219555	DNADATAGOV	Padmini Chetan Parmar	padmini.parmar	DNAMDMCON	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1315919	CRL	Sarika Malhotra	sarika.malhotra	DNADOCOTH	DNACLOUD	DNADLY	DNA	Individual	Eureka	CHANDIGARH
+1259775	DNADATAGOV	Aditya Jayavarma Hegde	aditya.hegde02	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1275934	SURE	Mounika Murukutla	mounika.murukutla	DNASUREBDA	DNASURE	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad SEZ
+1210556	SURE	Mohd Ahmed Siddique	mohdahmed.siddique	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1033577	DNADATAGOV	Varun Khanna	varun.khanna02	DNADPR	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1231291	FS	Sree Harsha Yaganti	sreeharsha.yaganti	DNAFS-EUR1	DNAFS	DNADLY	DNA	Individual	Business Ninja	Pune
+1289353	HL	Pooja Srivastava	pooja.srivastava06	DNAHL-HC1	DNAHL	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1239388	HL	Anand Kumar Bharti	anandkumar.bharti	DNAGCP	DNACLOUD	DNADLY	DNA	Individual	Rookie of the Qtr	BHUBANESWAR
+1253024	DNADATAGOV	Sourabh Unnikrishnan	sourabh.u	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+778120	DNADATAGOV	Ashish Pandey	ashish.pandey02	DNAMDMCOFE	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1259767	DNADATAGOV	Harsh Dharmendra Agrawal	harsh.agrawal05	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+759835	FS	Ravindran Rangasamy	ravindran.rangasamy	DNAFS-US1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	CHENNAI
+1253024	DNADATAGOV	Sourabh Unnikrishnan	sourabh.u	DNADSTG	DNADATAGOV	DNADLY	DNA	Team	Engineering Excellence	BANGALORE
+1194942	FS	Tejaswi Kothapalli	tejaswi.kothapalli	DNAFS-US1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+637532	FS	Alok Kumar Tiwari	Alok_Tiwari06	DNADTBRICKS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1225764	HL	Rachit Jalali	rachit.jalali	DNAHL-HC2	DNAHL	DNADLY	DNA	Individual	Business Ninja	CHANDIGARH
+1242457	HL	Suchitra Behera	suchitra.behera	DNAHL-HC3	DNAHL	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1156622	CRL	Vamshi Satyanarayana Bokka	vamshi.bokka	DNASNOW	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Pune
+1082394	ANALYTICS	Indranil Sikder	indranil.sikder	ANADU01	ANALYTICS	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1126029	HL	Aradhya Gupta	aradhya.gupta	DNAHL-HC2	DNAHL	DNADLY	DNA	Individual	Business Ninja	Pune
+1176906	CRL	Rushikesh Ghongate	rushikesh.ghongate	DNACRLRT01	DNACRL	DNADLY	DNA	Individual	Business Ninja	Pune
+1250823	DNACTO	Aditya Singh Rawat	adityasingh.rawat	DNAARCH	DNACTO	DNADLY	DNA	Individual	Rookie of the Qtr	CHANDIGARH
+1227564	DNACTO	Akilan Rajendran	akilan.rajendran	DNAARCH	DNACTO	DNADLY	DNA	Individual	Business Ninja	Chennai
+635013	CMT	Amal Mandal	Amal_Mandal	DNAAZURE	DNACLOUD	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+755991	CMT	Saravanan Kaliapillai	saravanan.k	DNAAZURE	DNACLOUD	DNADLY	DNA	Team	Engineering Excellence	CHENNAI
+1011870	CMT	Lakshmipriya Ravindran	lakshmipriya.r02	DNAHTCDU01	DNACMT	DNADLY	DNA	Team	Engineering Excellence	CHENNAI
+1098109	CMT	Bachu Alekya	bachu.alekya	DNAAZURE	DNACLOUD	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+625004	CMT	Rajesh Kumar KV	Rajesh_K12	DNAHTCDU01	DNACMT	DNADLY	DNA	Team	Engineering Excellence	Chennai
+1223060	CMT	Asawari Ambarish Pusadkar	asawari.pusadkar	DNAHTCDU01	DNACMT	DNADLY	DNA	Team	Engineering Excellence	Pune
+1282192	DNADATAGOV	Rahul Kumar Sharda	rahul.sharda	DNADSTG	DNADATAGOV	DNADLY	DNA	Team	Engineering Excellence	BANGALORE
+1274469	CMT	Aritra Sen	aritra.sen	DNAPLATFORM	DNAPLAT	DNADLY	DNA	Team	Engineering Excellence	BANGALORE
+719800	DNADATAGOV	Harikrishna Subramanian	Harikrishna.S01	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Eureka	BANGALORE
+1098020	CMT	Sai Madhav Manchem	sai.manchem	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1263896	CRL	Vijaykumar Choodesh	vijaykumar.choodesh	DNASNOW	DNACLOUD	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1309568	CRL	Toney Aloysious	toney.aloysious	DNACRLAP01	DNACRL	DNADLY	DNA	Individual	Rookie of the Qtr	TRIVANDRUM
+1186041	CMT	Shaurya Priyadarshi	shaurya.priyadarshi	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	PUNE
+682727	FS	Girija Stalin	Girija_S04	DNAFS-US5	DNAFS	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+662360	FS	Namratha Varatharasan Adiseshan	Namratha_Adiseshan	DNAFS-US5	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1095376	CMT	Rajat Ranjan	rajat.ranjan02	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1302412	CMT	Dinesh Ramasamy	dinesh.ramasamy	DNADTBRICKS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Chennai
+1254227	CMT	Naveen Kumar	naveen.kumar131	DNADGSP	DNACTO	DNADLY	DNA	Individual	Rookie of the Qtr	PUNE
+1254223	CMT	Anupam Samanta	anupam.samanta01	DNADGSP	DNACTO	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad STP
+1293958	CMT	Mohammed Aejaz	mohammed.aejaz	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad STP
+1158706	CMT	Ravi Teja Chinthamreddy	ravi.chinthamreddy	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1098343	CMT	Pondivya Bala Murugan	pondivyabala.m	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+1098347	CMT	Prajakta Madhukar Katkar	prajakta.katkar	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	PUNE
+1261359	CMT	Kancharla Rekha Pavani	kancharla.p01	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1184051	DNADATAGOV	Prerna Sharma	prerna.sharma09	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1140408	DNADATAGOV	Aarohi Vashistha	aarohi.vashistha	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	Bangalore
+660866	CMT	Preethi Rajendran	Preethi_R09	DNACMTDU03	DNACMT	DNADLY	DNA	Individual	Business Ninja	Chennai
+1116226	CMT	Kirti Barman	kirti.barman	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	Pune
+1118234	CMT	Nirmal K Sugunan	nirmal.sugunan	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1164227	CMT	Venkata Sai Kausik Nandanavanam	venkatasaikausik.n	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+73252	DNADATAGOV	Barani Prasad	BaraniPrasad_C	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Eureka	BANGALORE
+617787	DNADATAGOV	Mahesh Raghuveer Kulkarni	Mahesh_Kulkarni06	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Eureka	BANGALORE
+1244495	HL	Chandana Harish	chandana.harish	DNAHL-HC1	DNAHL	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad SEZ
+1276108	HL	Shivanjali Somnath Kankate	shivanjali.kankate	DNASURESRV	DNASURE	DNADLY	DNA	Individual	Rookie of the Qtr	Pune
+650295	HL	Ankur Shukla	Ankur_Shukla06	DNAGCP	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Pune
+1058732	CMT	Teja Koduru	teja.koduru	DNACMTDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	Bangalore
+1058734	DNACTO	Subahan Shaik	shaik.subahan	DNAPLARCH	DNACTO	DNADLY	DNA	Individual	Business Ninja	Bangalore
+141075	HL	Pratik Ghosh	Pratik_Ghosh	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Eureka	Bhubaneswar
+72710	HL	Shivangi Sanjiv Kulkarni	ShivangiS_Kulkarni	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Eureka	Pune
+1140876	FS	Vaibhav Bhuwania	vaibhav.bhuwania	DNAFS-US2	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1310009	MFG	MohanRao Pachava	mohanrao.p01	DNAMFGUS	DNAMFG	DNADLY	DNA	Individual	Rookie of the Qtr	Bangalore
+1060377	DNADATAGOV	Archana Lal	archana.lal	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1051058	CRL	Abarna JB	abarna.jb	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1079771	CRL	Ala Sharaf	ala.sharaf	DNACRLLG01	DNACRL	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1057824	ANALYTICS	Priya Avinash Patil	priya.patil01	ANADU01	ANALYTICS	DNADLY	DNA	Individual	Business Ninja	PUNE
+725244	FS	Venkataraj Ramarepalu	venkataraj.r	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1181155	DNACTO	Subhang Pandoh	subhang.pandoh	DNACTOPP	DNACTO	DNADLY	DNA	Individual	Business Ninja	CHANDIGARH
+1326485	CMT	Sibesta	sibesta	DNACMTDU02	DNACMT	DNADLY	DNA	Individual	Rookie of the Qtr	BHUBANESWAR
+98491	DNACTO	Sivananda Pattanaik	Sivananda_Pattanaik	DNAARCH	DNACTO	DNADLY	DNA	Team	Engineering Excellence	Bhubaneswar
+170097	DNACTO	Santosh Kumar Dodla	Santosh_Dodla	DNAARCH	DNACTO	DNADLY	DNA	Team	Engineering Excellence	BHUBANESWAR
+1066998	FS	Adrika Dasgupta	adrika.dasgupta	DNAFS-US1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	Bhubaneswar
+1021660	FS	Prarambha Pattanaik	prarambha.pattanaik	DNAFS-US1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	Bhubaneswar
+183606	MFG	Rakshat Ramananda Shetty	Rakshat_Shetty	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1274483	CRL	Nameesha D P	nameesha.p	DNACRLRT01	DNACRL	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+616648	CRL	Deepika Arumugham	Deepika_Arumugham	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Eureka	TRIVANDRUM
+1294209	CRL	Lakshmi Gayatri Dakavarapu	lakshmigayatri.d	DNACRLRT01	DNACRL	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad STP
+1161728	MFG	Akash Shaw	akash.shaw03	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1165736	CRL	Prashanth Vijayan	prashanth.vijayan	DNAPLATFORM	DNAPLAT	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+81157	Others	Komali Kamma	Komali_Kamma	DNATPD	DNA	DNADLY	DNA	Individual	Eureka	BANGALORE
+1258202	MFG	AnilKumar Reddy Dasireddy	anilkumarreddy.d	DNASNOW	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+625508	CRL	Archana Chitikela	Archana_Chitikela	DNACRLRT02	DNACRL	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1230482	CRL	Barath Kumar Karra	barathkumar.karra	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1272798	CRL	Dhurghempudi Nagarjuna Reddy	dhurghempudi.reddy	DNAPLATFORM	DNAPLAT	DNADLY	DNA	Individual	Rookie of the Qtr	Hyderabad SEZ
+1109424	FS	Sunita Maruti Kasar	sunita.kasar	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	PUNE
+1253042	DNADATAGOV	Aishwarya Kumari	aishwarya.kumari01	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1065623	FS	Smriti Taneja	smriti.taneja	DNAFS-US1	DNAFS	DNADLY	DNA	Individual	Business Ninja	CHANDIGARH
+1075464	DNADATAGOV	Gayathri Marar	gayathri.marar	DNAMDMCON	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+756195	MFG	Adarsh Kumar Bandari	adarsh.bandari	DNAMFGEUR	DNAMFG	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1054006	DNADATAGOV	Siddharth Chakraborty	siddharth.c13	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+625971	FS	Manjusha Gudur	Manjusha_Gudur	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad STP
+1193599	HL	Amruta Chandrashekhar Shetty	amruta.shetty	DNAHLMOD	DNAHL	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1271607	MFG	Venkateswarlu Polanki	venkateswarlu.p07	DNAMFGEUR	DNAMFG	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1131675	FS	Shrilakshmi	shrilakshmi02	DNAFS-US2	DNAFS	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1146174	HL	Lingutla Charan Teja	lingutlacharan.teja	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1154240	FS	Muthu Vengadesh S	muthuvengadesh.s	DNAFS-US5	DNAFS	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+673359	FS	Manish Mongia	Manish_Mongia	DNAFS-EUR3	DNAFS	DNADLY	DNA	Individual	Business Ninja	PUNE
+676863	FS	Naga Anjaneyulu Tanukula	Anjaneyulu_T01	DNAAWS	DNACLOUD	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+1180552	FS	Megha Madan Bhagat	megha.bhagat	DNAFS-ROW2	DNAFS	DNADLY	DNA	Team	Engineering Excellence	PUNE
+1121534	FS	Rohit Krishna	rohit.krishna	DNAFS-ROW1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	BANGALORE
+1157261	FS	Pooja Arkasali	pooja.arkasali	DNAFS-ROW1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	BANGALORE
+625971	FS	Manjusha Gudur	Manjusha_Gudur	DNAFS-ROW1	DNAFS	DNADLY	DNA	Team	Engineering Excellence	Hyderabad STP
+1176448	CRL	Naveen Sreehari	naveen.s22	DNACRLCP02	DNACRL	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1090931	ANALYTICS	Amitesh Saha	amitesh.saha01	ANADMCON	ANALYTICS	DNADLY	DNA	Individual	Business Ninja	PUNE
+729708	CMT	Pradeep Mundandhara Sasitharan	mundanthara.pradeep	DNAGCP	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1270567	DNADATAGOV	Kriti Chakraborty	kriti.chakraborty01	DNADSTG	DNADATAGOV	DNADLY	DNA	Individual	Rookie of the Qtr	BANGALORE
+1115753	FS	Nanthini D	nanthini.d	DNAFS-US2	DNAFS	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1295629	DNADATAGOV	Shyam Saloni	shyam.saloni	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Rookie of the Qtr	CHANDIGARH
+1297755	FS	Prem Kumar Rabindra Mahanta	premkumarrabindra.m	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Rookie of the Qtr	Pune
+1129885	FS	Jyothirmayi Koduru	jyothirmayi.koduru	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+678431	FS	Radha Vivek Kulkarni	Radha_Kulkarni	DNAAWS	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1242826	CMT	Monika Naresh Bahal	monika.bahal	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	Pune
+1014511	CMT	Vignesh Kulasekar	vigneshk.kulasekar	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+1146760	FS	Aswat R	aswat.r	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+1094957	FS	Nagarjuna Panidapu	nagarjuna.panidapu	DNAFS-US3	DNAFS	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+1106255	FS	Toran Katiyar	toran.katiyar	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	Pune
+1191035	FS	Hinduja Murugan	hinduja.murugan	DNAFS-US3	DNAFS	DNADLY	DNA	Individual	Business Ninja	Chennai
+1131843	FS	Tirumala Krishna Chaitanya B	tirumalakrishna.b	DNAFS-US4	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1131711	FS	Nikitha Chejarla	nikitha.chejarla	DNAFS-US4	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1263569	CMT	Pragati Narayan Manerkar	pragati.manerkar	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	PUNE
+1175548	CMT	Parag Pawar	parag.pawar	DNACMTDU03	DNACMT	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1289671	INS	Pothuraju Sivakrishna	pothuraju.s	DNACRLAP01	DNACRL	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1177038	INS	Mercy Rani Elitam	mercyrani.elitam	DNAINS-INS1	DNAINS	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+1267817	CMT	Pandurang Dinanath Ghatole	pandurang.ghatole	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Rookie of the Qtr	PUNE
+1175042	CMT	Bhavna Rathod	bhavna.rathod	DNACMTDU03	DNACMT	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1161807	CMT	Surya K	surya.k04	DNADGSP	DNACTO	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+1220246	CMT	Arjun Anilkumar Sumathy	arjun.s15	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Business Ninja	BANGALORE
+1219374	DNACTO	Paritosh Deshmukh	paritosh.deshmukh	DNAPLARCH	DNACTO	DNADLY	DNA	Individual	Eureka	Hyderabad STP
+1154314	CRL	Vishnu Priya C	vishnu.c05	DNACRLCP02	DNACRL	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1234600	CMT	Chetan Vitthal Charde	chetan.charde	DNAHTCDU01	DNACMT	DNADLY	DNA	Individual	Rookie of the Qtr	PUNE
+1132663	CRL	Nithya Krishnamoorthy	nithya.k03	DNACRLCP02	DNACRL	DNADLY	DNA	Individual	Business Ninja	CHENNAI
+1154159	CRL	Stoy Thomas	stoy.thomas	DNACRLCP02	DNACRL	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+28270	CMT	Nitish Babu Philip	nitish_philip	DNACMTDU02	DNACMT	DNADLY	DNA	Team	Engineering Excellence	TRIVANDRUM
+1261873	CMT	Lekshmi V R	lekshmi.r09	DNAGCP	DNACLOUD	DNADLY	DNA	Team	Engineering Excellence	TRIVANDRUM
+47622	DNACTO	Srinivasu Naidu	Srinivasu_Naidu	DNAARCH	DNACTO	DNADLY	DNA	Team	Engineering Excellence	Hyderabad SEZ
+1261873	CMT	Lekshmi V R	lekshmi.r09	DNAGCP	DNACLOUD	DNADLY	DNA	Individual	Eureka	TRIVANDRUM
+1117539	DNADATAGOV	Tajana Rahman	tajana.rahman	DNAMDMCOFE	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+672566	CRL	Tom J Thekkekara	Tom_Thekkekara	DNACRLRT01	DNACRL	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+1076905	DNADATAGOV	Sreekesh T K	sreekesh.tk	DNADGOV	DNADATAGOV	DNADLY	DNA	Individual	Business Ninja	TRIVANDRUM
+635219	Others	Chandan Misra	Chandan_Misra	QDNA	QLTY	QLTY	QLTY	Individual	BEF Award	Bhubaneswar
+1145764	Others	Rachana Suri	rachana.suri	QDNA	QLTY	QLTY	QLTY	Individual	BEF Award	PUNE
+1199862	Others	Sadasivam Madanagopal	sadasivam.m	QDNA	QLTY	QLTY	QLTY	Individual	BEF Award	Chennai
+1306899	Others	Meha Pruthvish Mehta	meha.mehta	QDNA	QLTY	QLTY	QLTY	Individual	BEF Award	PUNE
+680593		Sucharitha Surya Lakshmi Vadrevu	Sucharithasurya_L	DNAAZURE	DNACLOUD	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ
+682955		Shivani Srivastava	Shivani_S02	DNAFS-ROW1	DNAFS	DNADLY	DNA	Individual	Business Ninja	Hyderabad SEZ

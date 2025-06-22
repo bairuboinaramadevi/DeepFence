@@ -1,0 +1,3 @@
+SnNo,URL,Properties
+1,"http://127.0.0.1:5000/?dbParams={""functionName"":""Tasks"",""moduleName"":""Tasks"",""tasksObj"":{""UserName"":""genx.expedition@gmail.com"",""WorkspaceName"":""AccountWorkspace""},""queryType"":""read""}",Read Task
+2,"http://127.0.0.1:5000/?dbParams={""functionName"":""Tasks"",""moduleName"":""Tasks"",""tasksObj"":{""UserName"":""genx.expedition@gmail.com"",""WorkspaceName"":""AccountWorkspace""},""queryType"":""read""}",Read Task
