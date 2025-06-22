@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+	Panacea by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <title>Spectra</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="static/CDN/panacea/assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="static/CDN/panacea/assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <!-- Logo -->
+        <!-- <a href="/" class="logo">
+            <span class="symbol"
+              ><img
+                src="static/CDN/images/panacealogo.png"
+                alt=""
+                style="width: 12em !important; height: 3em !important"
+            /></span>
+          </a> -->
+
+        <!-- Nav -->
+        <nav>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a class="" data-app="DataCleansing">AI Data Engineering</a>
+          <ul>
+            <li><a class="" data-app="DataCleansing">Agentic AI Data Ingestion</a></li>
+            <li><a class="" data-app="DataCleansing" href="">DataReady for AI</a></li>
+            <li><a class="" data-app="DataCleansing">AI Data Quality Index</a></li>
+            <li><a class="" data-app="Sentinel">AI ComplianceOps</a></li>
+          </ul>
+        </li>
+        <li><a class="" data-app="DataCleansing">AI CodeOps</a></li>
+        <li><a class="" data-app="DataCleansing">AI TicketOps</a></li>
+        <li><a class="" data-app="DataCleansing">AI ITOps</a></li>
+
+        <li><a class="" data-app="DataCleansing">AI FinOps</a></li>
+        <li><a class="" data-app="Service Terms">Service Terms</a></li>
+
+        <li><a class="" data-app="DataCleansing">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+      <div class="inner" style="overflow-x: hidden;">
+
+
+        <!-- <div class="g_id_signin" data-type="standard" data-theme="filled_blue" data-text="signin" id="siginBtn"
+            style="width:230px;margin-left: -100px; margin-right: 200px"></div> -->
+        <header>
+          <h1>
+            Welcome to Spectra,
+            <span style="font: size 42px !important;">Our Agentic AI powered Data Platform Story</span>
+          </h1>
+          <!-- Query Parameter Javascript to Replace the word Data Platform  - Ticketing platform story, Health Platform Story, Cybersecurity -->
+          <!-- <iframe src="/AgenticDataCarousel" style="width: 134%;height: 580px;margin-top: -30px;margin-left: -200px;"></iframe> -->
+          <!-- Query Parameter Javascript to Replace the word Data Platform  - Ticketing platform story, Health Platform Story, Cybersecurity -->
+          <ul id="liArr">
+            
+          </ul>
+        </header>
+
+        <div id="g_id_onload" data-client_id="994612052796-f56oplssf91p1cvqcldg3fs6smrk0k2r.apps.googleusercontent.com"
+          data-callback="handleCredentialResponse"></div>
+        <div class="g_id_signin" data-size="large" data-theme="outline" data-type="standard"
+          style="position: absolute !important;top: 42px !important;right: 120px !important;">
+        </div>
+      </div>
+
+    </div>
+    <footer id="footer" style="padding: 0px; margin-top: 0px;position: absolute;
+      bottom: 0px;
+      width: -webkit-fill-available;">
+      <div class="inner">
+        <ul class="copyright">
+          <li>&copy; Spectra - Agentic AI POC </li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="static/CDN/panacea/assets/js/jquery.min.js"></script>
+  <script src="static/CDN/panacea/assets/js/browser.min.js"></script>
+  <script src="static/CDN/panacea/assets/js/breakpoints.min.js"></script>
+  <script src="static/CDN/panacea/assets/js/util.js"></script>
+  <script src="static/CDN/panacea/assets/js/main.js"></script>
+  <script src="https://accounts.google.com/gsi/client"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    var selectedMultiApp = "";
+    if(urlParams.has('app')){
+      selectedMultiApp = urlParams.get('app');
+    }
+    else{
+      selectedMultiApp = "AutoTicket";
+    }
+    let textArr = [];
+
+    if (selectedMultiApp == "AutoTicket") {
+      textArr = [
+        "Analyse & Search - Tickets, attachments, data , Timelines, Compliance",
+        "Powered by Ticket SLM, Gemini",
+        "Orchestrated by Autogen Agentic Framework",
+        "Developed on Python Flask API"
+      ];
+      ulEle = document.getElementById("liArr");
+      textArr.forEach(t=>{
+        let liEle = document.createElement("li");
+        liEle.innerText = t;
+        ulEle.appendChild(liEle);
+      })
+    }
+    // console.log(selectedMultiApp);
+    // $(".selectdom").on('click',function(){
+    //   let selectedDom = this.attributes['data-app'].nodeValue;
+    //   localStorage.setItem("SelectedMultiApp",selectedDom);
+    //   window.location.href = "/login";
+    // })
+
+    function handleCredentialResponse(googleUser) {
+      var creds = JSON.parse(atob(googleUser.credential.split(".")[1]));
+      var username = creds.name;
+      localStorage.setItem("LoginName", username);
+      var email = "incidentexpedition@gmail.com";
+      var pwd = "cznukmjtgahfaund";
+      var loginurl = `/validatelogin?username=${email}&password=${pwd}`;
+      fetch(loginurl)
+        .then(res => res.text())
+        .then(res => {
+          localStorage.setItem("loginemail", email);
+          localStorage.setItem("loginpwd", pwd);
+          window.location.href = "/EntitiesList"
+        });
+    }
+  </script>
+</body>
+
+</html>
