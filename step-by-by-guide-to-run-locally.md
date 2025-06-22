@@ -1,3 +1,7 @@
+Okay, here's the updated README.md focusing on VS Code, Python, and SQLiteDB.
+
+Markdown
+
 # Running Your Application Locally
 
 This guide provides instructions on how to set up and run this application on your local machine, specifically tailored for **VS Code**, **Python**, and **SQLiteDB**.
