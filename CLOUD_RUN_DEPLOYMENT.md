@@ -1,6 +1,6 @@
 # 🚀🛡️ Running DeepFence on Google Cloud Run
 
-Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here’s a visually enhanced, step-by-step guide to deploying DeepFence Cloud Scanner on Cloud Run using the gcloud CLI.
+Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here’s a visually enhanced, step-by-step guide to deploying DeepFence on Cloud Run using the gcloud CLI.
 
 ----------
 
