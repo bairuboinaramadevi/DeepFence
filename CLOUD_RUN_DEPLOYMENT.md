@@ -1,6 +1,6 @@
 # 🚀🛡️ Running DeepFence on Google Cloud Run
 
-Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here’s a visually enhanced, step-by-step guide to deploying DeepFence on Cloud Run using the gcloud CLI.
+Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here’s a visually enhanced, step-by-step guide to deploying DeepFence Cloud Scanner on Cloud Run using the gcloud CLI.
 
 ----------
 
@@ -44,9 +44,12 @@ Choose a method that suits your workflow:
 
 Ensure your app is containerized with a  `Dockerfile`:
 
-text
-
-`# 📌 Base Image FROM python:3.9-slim   # 📁 Set working directory WORKDIR /app   # 📂 Copy code COPY . .   # 📦 Install dependencies RUN pip install -r requirements.txt   # 🌐 Expose the port used by Cloud Run EXPOSE 8080   # 🚀 Run the app CMD ["python", "app.py"]` 
+`# 📌 Base Image FROM python:3.9-slim   
+##### 📁 Set working directory WORKDIR /app  
+##### 📂 Copy code COPY . .   
+##### 📦 Install dependencies RUN pip install -r requirements.txt   
+##### 🌐 Expose the port used by Cloud Run EXPOSE 8080   
+##### 🚀 Run the app CMD ["python", "app.py"]` 
 
 > ⚙️  _Modify as per your stack (Node.js, Go, Java, etc.)_
 
@@ -57,7 +60,7 @@ text
 bash
 
 `# 🏗️ Build image locally docker build -t gcr.io/<your-project-id>/<your-image-name>:<tag>  .   
-#### 🚀 Push to Google Container Registry docker push gcr.io/<your-project-id>/<your-image-name>:<tag>` 
+##### 🚀 Push to Google Container Registry docker push gcr.io/<your-project-id>/<your-image-name>:<tag>` 
 
 -   📝 Replace:
     
