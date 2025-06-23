@@ -1,110 +1,136 @@
-# 🚀 Running DeepFence on Google Cloud Run
+	# 🚀🛡️ Running DeepFence on Google Cloud Run
 
-Google Cloud Run is a managed serverless platform that lets you deploy containerized applications. This guide walks you through deploying your app to Cloud Run.
+	Google Cloud Run is a managed serverless platform that lets you deploy containerized applications with ease. This guide walks you through deploying DeepFence Cloud Scanner to Cloud Run using the Google Cloud CLI, with rich icons for clarity and visual appeal.
 
----
+	----------
 
-## ✅ Prerequisites
+	## ✅ Prerequisites
 
-- A **Google Cloud** account with billing enabled  
-- **Google Cloud SDK (gcloud CLI)** installed  
-  👉 [Install gcloud](https://cloud.google.com/sdk/docs/install)  
-- (Optional) **Docker** installed if you’re building container images locally  
-  👉 [Install Docker](https://www.docker.com/get-started)
+	-   🏦  **Google Cloud**  account with billing enabled
+	    
+	-   🖥️  **Google Cloud SDK (gcloud CLI)**  installed  
+	    👉  [Install gcloud](https://cloud.google.com/sdk/docs/install)
+	    
+	-   🐳  **Docker**  installed (optional, if building images locally)  
+	    👉  [Install Docker](https://www.docker.com/get-started)
+	    
+	-   🔑  **DeepFence Management Console URL & API Key**
+	    
 
----
+	----------
 
-## 🛠️ Deployment Methods
+	## 🛠️ Deployment Methods
 
-You can deploy to Cloud Run in several ways:
+	You can deploy to Cloud Run in several ways:
 
-1. **From a Git Repository** – Automatically deploy from GitHub or other repos  
-2. **Using a Pre-built Container Image** – Deploy images from Google Container or Artifact Registry  
-3. **Using gcloud CLI** – Most versatile and controlled approach  
-4. **Using Cloud Buildpacks** – Automatically detect and containerize your app
+	1.  📦  **From a Git Repository**  – Automatically deploy from GitHub or other repos
+	    
+	2.  🗂️  **Using a Pre-built Container Image**  – Deploy images from Google Container or Artifact Registry
+	    
+	3.  💻  **Using gcloud CLI**  – Most versatile and controlled approach
+	    
+	4.  🏗️  **Using Cloud Buildpacks**  – Automatically detect and containerize your app
+	    
 
----
+	----------
 
-## 📦 Step-by-Step Deployment (Using `gcloud` CLI)
+	## 📦 Step-by-Step Deployment (Using  `gcloud`  CLI)
 
-### 1️⃣ Prepare Your Application
+	## 1️⃣ Prepare Your Application
 
-Make sure your app is containerized. If not, create a `Dockerfile` in your project root:
+	Ensure your app is containerized. If not, create a  `Dockerfile`  in your project root:
 
-```dockerfile
-FROM python:3.9-slim
+	text
 
-WORKDIR /app
-COPY . .
+	`FROM python:3.9-slim   WORKDIR /app COPY . .   RUN pip install -r requirements.txt EXPOSE 8080   CMD ["python", "app.py"]` 
 
-RUN pip install -r requirements.txt
-EXPOSE 8080
+	🔁  _Adjust the base image, install commands, port, and CMD based on your stack._
 
-CMD ["python", "app.py"]
-🔁 Adjust the base image, install, port, and CMD based on your stack.
+	----------
 
-2️⃣ Build and Push the Container Image (Optional)
-If you already have an image, skip this step. Otherwise, build and push:
+	## 2️⃣ Build and Push the Container Image (Optional)
 
-bash
-Copy
-Edit
-# Build the image
-docker build -t gcr.io/<your-project-id>/<your-image-name>:<tag> .
+	If you already have a container image, skip this step. Otherwise:
 
-# Push to Google Container Registry
-docker push gcr.io/<your-project-id>/<your-image-name>:<tag>
-Replace <your-project-id>, <your-image-name>, and <tag> (e.g., latest).
+	bash
 
-3️⃣ Deploy to Cloud Run
-Run the following command:
+	`# 🏗️ Build the image docker build -t gcr.io/<your-project-id>/<your-image-name>:<tag>  .   # 🚀 Push to Google Container Registry docker push gcr.io/<your-project-id>/<your-image-name>:<tag>` 
 
-bash
-Copy
-Edit
-gcloud run deploy <service-name> \
-  --image gcr.io/<your-project-id>/<your-image-name>:<tag> \
-  --region <your-region> \
-  --platform managed \
-  --allow-unauthenticated
-🔧 Replace placeholders:
+	_Replace  `<your-project-id>`,  `<your-image-name>`, and  `<tag>`  (e.g., latest)._
 
-<service-name> – Your Cloud Run service name
+	----------
 
-<your-region> – e.g., us-central1
+	## 3️⃣ Deploy to Cloud Run
 
-Remove --allow-unauthenticated if you want to require auth
+	bash
 
-4️⃣ Test Your Deployment
-After deployment, the CLI will return a live URL.
-Visit this URL in your browser to test your deployed app.
+	`gcloud run deploy <service-name>  \   --image gcr.io/<your-project-id>/<your-image-name>:<tag>  \ --region <your-region>  \ --platform managed \ --allow-unauthenticated` 
 
-⚙️ Additional Options
-Set Environment Variables:
+	🔧  _Replace placeholders:_
 
-bash
-Copy
-Edit
-gcloud run deploy <service-name> \
-  --image ... \
-  --set-env-vars KEY1=value1,KEY2=value2
-Scale Configuration:
-Cloud Run auto-scales based on traffic. You can configure min/max instances using flags like --min-instances and --max-instances.
+	-   `<service-name>`  – Your Cloud Run service name
+	    
+	-   `<your-region>`  – e.g., us-central1
+	    
+	-   Remove  `--allow-unauthenticated`  if you want to require authentication
+	    
 
-Continuous Deployment:
-Enable GitHub-triggered deployments via Cloud Build.
+	----------
 
-"Run on Google Cloud" Button:
-Add a one-click deployment button to your repo.
-👉 See: cloud-run-button GitHub Repo
+	## 4️⃣ 🔗 Retrieve and Test Your Deployment URL
 
-🧩 Troubleshooting
-Port Mismatch:
-Your app must listen on the same port as the one declared in EXPOSE and used by Cloud Run (typically 8080).
+	If the CLI does  **not**  show the service URL after deployment, run:
 
-Permission Errors:
-Ensure your account has roles like Cloud Run Admin and Service Account User.
+	bash
 
-Image Build Issues:
-Check for typos or incorrect commands in your Dockerfile.
+	`gcloud run services describe <service-name>  \   --region <your-region>  \ --platform managed \ --format='value(status.url)'` 
 
+	🌐  _Copy and open the URL in your browser to test your deployed app._
+
+	----------
+
+	## ⚙️ Additional Options
+
+	-   📝  **Set Environment Variables:**
+	    
+	    bash
+	    
+	    `gcloud run deploy <service-name>  \   --image ... \ --set-env-vars KEY1=value1,KEY2=value2` 
+	    
+	-   📈  **Scale Configuration:**  
+	    Cloud Run auto-scales based on traffic. Configure min/max instances with  `--min-instances`  and  `--max-instances`.
+	    
+	-   🔄  **Continuous Deployment:**  
+	    Enable GitHub-triggered deployments via Cloud Build.
+	    
+	-   ☁️  **"Run on Google Cloud" Button:**  
+	    Add a one-click deployment button to your repo.  
+	    👉 See: cloud-run-button GitHub Repo
+	    
+
+	----------
+
+	## 🧩 Troubleshooting
+
+	-   🛠️  **Port Mismatch:**  
+	    Your app must listen on the same port as declared in  `EXPOSE`  and used by Cloud Run (typically 8080).
+	    
+	-   🛡️  **Permission Errors:**  
+	    Ensure your account has roles like Cloud Run Admin and Service Account User.
+	    
+	-   🖼️  **Image Build Issues:**  
+	    Check for typos or incorrect commands in your Dockerfile.
+	    
+
+	----------
+
+	## 📚 Resources
+
+	-   [📖 DeepFence Cloud Scanner Docs](https://community.deepfence.io/threatmapper/docs/cloudscanner/gcp/)
+	    
+	-   [☁️ Google Cloud Run Documentation](https://cloud.google.com/run/docs/deploying)
+	    
+
+	----------
+
+	**Protect your cloud. Deploy DeepFence in minutes!**
