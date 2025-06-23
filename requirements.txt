@@ -1,4 +1,4 @@
-Flask==2.3.3
+Flask[async]
 requests==2.31.0
 debugpy # Required for debugging.
 
@@ -8,7 +8,13 @@ pandas
 cryptography 
 papermill 
 mlflow 
-hashlib
-psycopg2
+psycopg2-binary
 flask-cors
 flask-socketio
+google-genai
+asyncio
+uuid
+subprocess.run
+pybase64
+google-cloud-firestore 
+google-auth
