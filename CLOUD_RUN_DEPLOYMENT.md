@@ -1,25 +1,19 @@
 🚀🛡️ Running DeepFence on Google Cloud Run
-Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here's a visually enhanced guide to help you deploy DeepFence Cloud Scanner on Cloud Run using the gcloud CLI.
+Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here’s a visually enhanced, step-by-step guide to deploying DeepFence Cloud Scanner on Cloud Run using the gcloud CLI.
 
 ✅ Prerequisites
 🏦 Google Cloud Account
-
 Billing must be enabled
-
 👉 Create GCP Account
 
 💻 Google Cloud SDK (gcloud CLI)
-
 Required for deploying via CLI
-
 👉 Install gcloud
 
 🐳 Docker (Optional if not using pre-built image)
-
 👉 Install Docker
 
 🔑 DeepFence API Key & Console URL
-
 Required for configuring scan credentials
 
 🛠️ Deployment Methods
@@ -37,9 +31,7 @@ Choose a method that suits your workflow:
 1️⃣ Prepare Your Application
 Ensure your app is containerized with a Dockerfile:
 
-dockerfile
-Copy
-Edit
+text
 # 📌 Base Image
 FROM python:3.9-slim
 
@@ -61,8 +53,6 @@ CMD ["python", "app.py"]
 
 2️⃣ Build & Push the Container Image
 bash
-Copy
-Edit
 # 🏗️ Build image locally
 docker build -t gcr.io/<your-project-id>/<your-image-name>:<tag> .
 
@@ -78,8 +68,6 @@ docker push gcr.io/<your-project-id>/<your-image-name>:<tag>
 
 3️⃣ Deploy to Cloud Run
 bash
-Copy
-Edit
 gcloud run deploy <service-name> \
   --image gcr.io/<your-project-id>/<your-image-name>:<tag> \
   --region <your-region> \
@@ -94,11 +82,9 @@ gcloud run deploy <service-name> \
 Remove --allow-unauthenticated if you want secured access
 
 4️⃣ 🔍 Retrieve & Test the URL
-If the CLI doesn't display the URL after deployment:
+If the CLI doesn't display the URL after deployment, run:
 
 bash
-Copy
-Edit
 gcloud run services describe <service-name> \
   --region <your-region> \
   --platform managed \
@@ -109,20 +95,15 @@ gcloud run services describe <service-name> \
 📝 Environment Variables
 
 bash
-Copy
-Edit
 gcloud run deploy <service-name> \
   --image ... \
   --set-env-vars KEY1=value1,KEY2=value2
 📊 Scaling Config
 
 bash
-Copy
-Edit
 --min-instances=1 \
 --max-instances=10
 🔁 Enable Continuous Deployment
-
 Set up GitHub Actions or Cloud Build triggers.
 
 ☁️ Add "Run on Google Cloud" Button
@@ -130,13 +111,11 @@ Set up GitHub Actions or Cloud Build triggers.
 
 🧩 Troubleshooting
 Issue	Cause	Solution
-⚠️ Port Binding	App not listening on correct port	Ensure EXPOSE 8080 and app uses port 8080
-🔐 Permission Denied	Missing roles	Assign Cloud Run Admin and Service Account User
+⚠️ Port Binding	App not on correct port	Ensure EXPOSE 8080 and app uses port 8080
+🔐 Permission Denied	Missing roles	Assign Cloud Run Admin & Service Account User roles
 🐳 Docker Build Fails	Syntax errors	Review your Dockerfile for issues
-
 📚 Helpful Resources
 📖 DeepFence Cloud Scanner Docs
 
 ☁️ Google Cloud Run Documentation
 
-🛡️ Secure your Cloud in Minutes – Deploy DeepFence Today!
