@@ -45,11 +45,11 @@ Choose a method that suits your workflow:
 Ensure your app is containerized with a  `Dockerfile`:
 
 `# 📌 Base Image FROM python:3.9-slim   
-##### 📁 Set working directory WORKDIR /app  
-##### 📂 Copy code COPY . .   
-##### 📦 Install dependencies RUN pip install -r requirements.txt   
-##### 🌐 Expose the port used by Cloud Run EXPOSE 8080   
-##### 🚀 Run the app CMD ["python", "app.py"]` 
+- 📁 Set working directory WORKDIR /app  
+- 📂 Copy code COPY . .   
+- 📦 Install dependencies RUN pip install -r requirements.txt   
+- 🌐 Expose the port used by Cloud Run EXPOSE 8080   
+- 🚀 Run the app CMD ["python", "app.py"]` 
 
 > ⚙️  _Modify as per your stack (Node.js, Go, Java, etc.)_
 
