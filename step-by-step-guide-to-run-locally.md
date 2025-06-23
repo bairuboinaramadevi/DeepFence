@@ -29,41 +29,14 @@ A lightweight Python application powered by **Flask** and **SQLite**, designed f
 
 ----------
 
-## 🛠 Prerequisites
+🛠 Prerequisites
+Ensure the following tools are installed on your system before you proceed with setup:
 
-Ensure the following tools are installed on your system:
-
-Tool
-
-Purpose
-
-Download Link
-
-Git
-
-Version control
-
-[Download Git](https://git-scm.com/downloads)
-
-Python + pip
-
-Programming language + packages
-
-[Download Python](https://www.python.org/downloads/)
-
-VS Code
-
-Code editor / IDE
-
-[Download VS Code](https://code.visualstudio.com/download)
-
-SQLite
-
-Lightweight database
-
-_(Usually comes bundled with Python or Flask)_
-
-----------
+🧰 Tool	🧾 Purpose	🔗 Download Link
+Git	Version control system	Download Git
+Python + pip	Programming language and package manager	Download Python
+VS Code	Code editor / Integrated Development Environment	Download VS Code
+SQLite	Lightweight relational database	Bundled with Python or your framework (Flask/Django)
 
 ## 💡 Recommended VS Code Extensions
 
