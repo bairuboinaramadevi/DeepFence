@@ -1,164 +1,154 @@
-# 🛡️ DeepFence
+:
 
-A lightweight Python application powered by **Flask** and **SQLite**, designed for local development using **VS Code**.
+🛡️ DeepFence
+A lightweight Python application powered by Flask and SQLite, designed for seamless local development using VS Code.
 
-----------
+📋 Table of Contents
+🛠 Prerequisites
 
-## 📋 Table of Contents
+💡 Recommended VS Code Extensions
 
--   [🛠 Prerequisites](#-prerequisites)
-    
--   [💡 Recommended VS Code Extensions](#-recommended-vs-code-extensions)
-    
--   [🚀 Setup Steps](#-setup-steps)
-    
-    -   [1️⃣ Clone the Repository](#1%EF%B8%8F%E2%83%A3-clone-the-repository)
-        
-    -   [2️⃣ Open in VS Code](#2%EF%B8%8F%E2%83%A3-open-in-vs-code)
-        
-    -   [3️⃣ Install Python Dependencies](#3%EF%B8%8F%E2%83%A3-install-python-dependencies)
-        
-    -   [4️⃣ Environment Variables (Optional)](#4%EF%B8%8F%E2%83%A3-environment-variables-optional)
-        
-    -   [5️⃣ Database Setup (SQLite)](#5%EF%B8%8F%E2%83%A3-database-setup-sqlite)
-        
--   [▶️ Running the Application](#%EF%B8%8F-running-the-application)
-    
--   [🌐 Accessing the App](#-accessing-the-app)
-    
+🚀 Setup Steps
 
-----------
+1️⃣ Clone the Repository
+
+2️⃣ Open in VS Code
+
+3️⃣ Install Python Dependencies
+
+4️⃣ Environment Variables (Optional)
+
+5️⃣ Database Setup (SQLite)
+
+▶️ Running the Application
+
+🌐 Accessing the App
+
+🤝 Contributing
+
+📄 License
 
 🛠 Prerequisites
-Ensure the following tools are installed on your system before you proceed with setup:
+Ensure the following tools are installed on your system:
 
-🧰 Tool	🧾 Purpose	🔗 Download Link
-Git	Version control system	Download Git
-Python + pip	Programming language and package manager	Download Python
-VS Code	Code editor / Integrated Development Environment	Download VS Code
-SQLite	Lightweight relational database	Bundled with Python or your framework (Flask/Django)
+🔧 Git — Version control
+👉 Download Git
 
-## 💡 Recommended VS Code Extensions
+🐍 Python + pip — Programming language and package manager
+👉 Download Python
 
-Install these extensions from the VS Code Marketplace:
+🖥️ VS Code — Code editor / IDE
+👉 Download VS Code
 
--   ✅ **Python** (by Microsoft)
-    
--   ✅ **SQLite** (e.g., _SQLite_ by _alexcvzz_)
-    
+🗄️ SQLite — Lightweight database
+Typically bundled with Python or web frameworks like Flask/Django
 
-----------
+💡 Recommended VS Code Extensions
+Enhance your development experience by installing:
 
-## 🚀 Setup Steps
+✅ Python (by Microsoft)
 
-### 1️⃣ Clone the Repository
+✅ SQLite (e.g., SQLite by alexcvzz)
+
+🚀 Setup Steps
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/bairuboinaramadevi/DeepFence.git
+cd DeepFence
+2️⃣ Open in VS Code
+bash
+Copy
+Edit
+code .
+If code . doesn't work, open VS Code manually and go to:
+File > Open Folder > Select DeepFence
+
+3️⃣ Install Python Dependencies
+We recommend setting up a virtual environment:
 
 bash
+Copy
+Edit
+# Create virtual environment
+python -m venv venv
 
-CopyEdit
+# Activate it
 
-`git clone https://github.com/bairuboinaramadevi/DeepFence.git cd DeepFence` 
+# macOS / Linux
+source venv/bin/activate
 
-----------
+# Windows - Command Prompt
+venv\Scripts\activate.bat
 
-### 2️⃣ Open in VS Code
+# Windows - PowerShell
+.\venv\Scripts\Activate.ps1
 
-bash
+# Install dependencies
+pip install -r requirements.txt
+🧠 Choose the Python interpreter inside venv if prompted in VS Code.
 
-CopyEdit
-
-`code .` 
-
-If `code .` doesn't work, manually open VS Code and go to:  
-**File > Open Folder > Select `DeepFence`**
-
-----------
-
-### 3️⃣ Install Python Dependencies
-
-We recommend using a **virtual environment**:
-
-bash
-
-CopyEdit
-
-`# Create virtual environment python -m venv venv # Activate it  # macOS / Linux  source venv/bin/activate # Windows - Command Prompt venv\Scripts\activate.bat # Windows - PowerShell .\venv\Scripts\Activate.ps1 # Install dependencies pip install -r requirements.txt` 
-
-> 🧠 _If prompted in VS Code, choose the Python interpreter inside `venv`._
-
-----------
-
-### 4️⃣ Environment Variables (Optional)
-
-If the project contains a `.env.example` file:
+4️⃣ Environment Variables (Optional)
+If the project includes a .env.example file:
 
 bash
+Copy
+Edit
+cp .env.example .env
+Edit .env to fill in any required variables like:
 
-CopyEdit
+API keys
 
-`cp .env.example .env` 
+Port numbers
 
-Update `.env` with your configuration values (e.g., API keys, ports, database path).
+Database paths
 
-----------
+5️⃣ Database Setup (SQLite)
+No installation needed for SQLite.
 
-### 5️⃣ Database Setup (SQLite)
-
-No separate installation needed!
-
-If your app uses **Flask-Migrate**, run:
-
-bash
-
-CopyEdit
-
-`flask db init # (Run only once) flask db migrate
-flask db upgrade` 
-
-This will generate the database file (e.g., `db.sqlite3`) and tables.
-
-----------
-
-## ▶️ Running the Application
-
-Ensure your **virtual environment is activated**:
+If your app uses Flask-Migrate, initialize the database:
 
 bash
+Copy
+Edit
+# Only once
+flask db init
 
-CopyEdit
+# Create migration scripts
+flask db migrate
 
-`# macOS / Linux  source venv/bin/activate # Windows venv\Scripts\activate.bat` 
+# Apply migrations
+flask db upgrade
+This will create the database file (e.g., db.sqlite3) and required tables.
 
-Then run:
+▶️ Running the Application
+Ensure your virtual environment is activated:
 
 bash
+Copy
+Edit
+# macOS / Linux
+source venv/bin/activate
 
-CopyEdit
+# Windows
+venv\Scripts\activate.bat
+Then run the app:
 
-`python <your_main_app_file>.py # OR for Flask apps: flask run` 
+bash
+Copy
+Edit
+# General
+python <your_main_app_file>.py
 
-----------
+# For Flask apps
+flask run
+🌐 Accessing the App
+Once running, open your browser and go to:
 
-## 🌐 Accessing the App
+bash
+Copy
+Edit
+http://localhost:5000
+ℹ️ The exact URL and port will be shown in your terminal.
 
-Once running, navigate to:
-
-arduino
-
-CopyEdit
-
-`http://localhost:5000` 
-
-> ℹ️ Check your terminal for the exact URL and port.
-
-----------
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
-
-----------
-
-## 📄 License
-
-This project is licensed under the MIT License. See LICENSE for details.
