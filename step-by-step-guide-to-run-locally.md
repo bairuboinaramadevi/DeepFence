@@ -63,15 +63,12 @@ DeepFence is a lightweight Python application designed for rapid local developme
 
 bash
 
-`git clone https://github.com/bairuboinaramadevi/DeepFence.git cd DeepFence` 
+`git clone https://github.com/bairuboinaramadevi/DeepFence.git` 
+`cd DeepFence` 
 
 ## 2️⃣ Open in VS Code
 
-bash
-
-`code .` 
-
-If  `code .`  doesn't work, open VS Code manually and go to:  
+ open VS Code manually and go to:  
 **File > Open Folder > Select  `DeepFence`**
 
 ----------
