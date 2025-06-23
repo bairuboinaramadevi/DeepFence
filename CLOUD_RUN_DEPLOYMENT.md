@@ -1,145 +1,109 @@
-# 🚀🛡️ Running DeepFence on Google Cloud Run
+🚀🛡️ Deploying DeepFence to Cloud Run from VS Code (with Google Cloud Authentication & Firebase Database)
+✅ Prerequisites
+Google Cloud account with billing enabled
 
-Google Cloud Run is a fully managed serverless platform that allows you to deploy containerized applications easily. Here’s a visually enhanced, step-by-step guide to deploying DeepFence Cloud Scanner on Cloud Run using the gcloud CLI.
+Cloud Run API enabled on your project
 
-----------
+VS Code installed
 
-## ✅ Prerequisites
+Cloud Code extension for VS Code installed
 
--   🏦  **Google Cloud Account**  
-    Billing must be enabled  
-    👉  [Create GCP Account](https://cloud.google.com/)
-    
--   💻  **Google Cloud SDK (gcloud CLI)**  
-    Required for deploying via CLI  
-    👉  [Install gcloud](https://cloud.google.com/sdk/docs/install)
-    
--   🐳  **Docker**  (Optional if not using pre-built image)  
-    👉  [Install Docker](https://www.docker.com/get-started)
-    
--   🔑  **DeepFence API Key & Console URL**  
-    Required for configuring scan credentials
-    
+Docker installed (for local builds)
 
-----------
+Your project code (with Dockerfile, or use Cloud Buildpacks for auto-containerization)
 
-## 🛠️ Deployment Methods
+Firebase project set up and Firebase Admin SDK integrated in your application code for database access
 
-Choose a method that suits your workflow:
+1️⃣ Authenticate VS Code with Google Cloud
+Open VS Code.
 
--   📁  **From Git Repository**  – Auto-deploy via GitHub/GitLab
-    
--   🧊  **Pre-built Container Image**  – Use images from Artifact Registry
-    
--   🖥️  **gcloud CLI**  – 🔥 Most flexible & controlled
-    
--   🧱  **Cloud Buildpacks**  – Auto-detects and containerizes apps
-    
+Open the Cloud Code extension sidebar (Google Cloud icon).
 
-----------
+Click Sign in to Google Cloud.
 
-## 📦 Step-by-Step Deployment (via gcloud CLI)
+Follow the prompts to authenticate your Google account and select your GCP project.
 
-## 1️⃣ Prepare Your Application
+Ensure the correct project is active in the Cloud Code status bar at the bottom of VS Code.
 
-Ensure your app is containerized with a  `Dockerfile`:
+2️⃣ Prepare Your Application (with Firebase Integration)
+Ensure your app is ready for Cloud Run (listens on port 8080, has a Dockerfile or compatible entrypoint).
 
-`# 📌 Base Image FROM python:3.9-slim   
-- 📁 Set working directory WORKDIR /app  
-- 📂 Copy code COPY . .   
-- 📦 Install dependencies RUN pip install -r requirements.txt   
-- 🌐 Expose the port used by Cloud Run EXPOSE 8080   
-- 🚀 Run the app CMD ["python", "app.py"]` 
+In your application code, integrate Firebase as your database:
 
-> ⚙️  _Modify as per your stack (Node.js, Go, Java, etc.)_
+Install the Firebase Admin SDK (pip install firebase-admin for Python, npm install firebase-admin for Node.js).
 
-----------
+Initialize Firebase in your app using your service account credentials (download from the Firebase Console).
 
-## 2️⃣ Build & Push the Container Image
+Use Firestore or Realtime Database to read/write data as needed.
 
-bash
+Example (Python):
 
-`# 🏗️ Build image locally docker build -t gcr.io/<your-project-id>/<your-image-name>:<tag>  .   
-##### 🚀 Push to Google Container Registry docker push gcr.io/<your-project-id>/<your-image-name>:<tag>` 
+python
+import firebase_admin
+from firebase_admin import credentials, firestore
 
--   📝 Replace:
-    
-    -   `<your-project-id>`  → your GCP project ID
-        
-    -   `<your-image-name>`  → e.g., deepfence-scanner
-        
-    -   `<tag>`  → e.g., latest
-        
+cred = credentials.Certificate('path/to/serviceAccountKey.json')
+firebase_admin.initialize_app(cred)
+db = firestore.client()
+# Example: db.collection('deepfence-results').add({'result': 'secure'})
+Make sure your Dockerfile copies the service account key or configure it securely via environment variables or Secret Manager.
 
-----------
+3️⃣ Deploy to Cloud Run from VS Code
+In the Cloud Code sidebar, right-click your project folder or open the command palette (Ctrl+Shift+P or Cmd+Shift+P).
 
-## 3️⃣ Deploy to Cloud Run
+Type and select Cloud Run: Deploy to Cloud Run.
 
-bash
+Follow the prompts:
 
-`gcloud run deploy <service-name>  \   --image gcr.io/<your-project-id>/<your-image-name>:<tag>  \ --region <your-region>  \ --platform managed \ --allow-unauthenticated` 
+Select your Google Cloud project.
 
--   🔧 Replace:
-    
-    -   `<service-name>`  → e.g., deepfence-cloud-run
-        
-    -   `<your-region>`  → e.g., us-central1
-        
-    -   Remove  `--allow-unauthenticated`  if you want secured access
-        
+Choose or create a Cloud Run service.
 
-----------
+Select the region.
 
-## 4️⃣ 🔍 Retrieve & Test the URL
+Choose your container image source (Dockerfile or Buildpacks).
 
-If the CLI doesn't display the URL after deployment, run:
+Set environment variables (such as GOOGLE_APPLICATION_CREDENTIALS for Firebase).
 
-bash
+Choose whether to allow unauthenticated access.
 
-`gcloud run services describe <service-name>  \   --region <your-region>  \ --platform managed \ --format='value(status.url)'` 
+Cloud Code will build, push, and deploy your container to Cloud Run automatically.
 
--   🌐  _Paste the URL in your browser to verify the app is running._
-    
+4️⃣ Monitor Deployment and Access Your Service
+Watch the Output window in VS Code for deployment logs and status.
 
-----------
+Once deployed, the service URL will be displayed in the output.
 
-## ⚙️ Advanced Options
+Click the link or copy-paste it into your browser to verify your app is running live on Cloud Run.
 
--   📝  **Environment Variables**
-    
-    bash
-    
-    `gcloud run deploy <service-name>  \   --image ... \ --set-env-vars KEY1=value1,KEY2=value2` 
-    
--   📊  **Scaling Config**
-    
-    bash
-    
-    `--min-instances=1  \ --max-instances=10` 
-    
--   🔁  **Enable Continuous Deployment**  
-    Set up GitHub Actions or Cloud Build triggers.
-    
--   ☁️  **Add "Run on Google Cloud" Button**  
-    👉  [cloud-run-button GitHub](https://github.com/GoogleCloudPlatform/cloud-run-button)
-    
+5️⃣ (Optional) Manage Secrets Securely
+Use the Cloud Code Secret Manager integration or environment variables to securely manage your Firebase service account credentials and API keys.
 
-----------
+Never hardcode secrets in your source code.
 
-## 🧩 Troubleshooting
+6️⃣ Using Firebase as Your Database
+Your deployed Cloud Run service can now read/write data to Firebase Firestore or Realtime Database as part of its workflow.
 
-⚠️ Port Binding
+For example, DeepFence scan results, logs, or user data can be stored and retrieved from Firebase for reporting or further processing.
 
-Ensure  `EXPOSE 8080`  and app uses port 8080
+🔄 Redeploying and Updating
+Make code changes as needed.
 
-🔐 Permission Denied
+Repeat the Cloud Run: Deploy to Cloud Run command to rebuild and redeploy your service.
 
-Assign Cloud Run Admin & Service Account User roles
+📝 Tips
+Use the Cloud Run Explorer in VS Code to view logs, manage services, and open URLs.
 
-🐳 Docker Build Fails
+Use Firebase Console to monitor your database, security rules, and real-time data.
 
-Review your Dockerfile for issues
+For troubleshooting, check the Output window and Cloud Run logs.
 
-----------
+References:
 
-🛡️  **Secure your Cloud in Minutes – Deploy DeepFence Today!**
+Cloud Code for VS Code
+
+Firebase Admin SDK Setup
+
+Deepfence Cloud Scanner GitHub
+
+This workflow lets you deploy to Google Cloud Run entirely from VS Code, with secure Google Cloud authentication and Firebase as your database backend.
