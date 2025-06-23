@@ -1,127 +1,191 @@
-# DeepFence
+# 🛡️ DeepFence
 
-This guide provides step-by-step instructions to set up and run your application on your local machine using **VS Code**, **Python**, and **SQLite**.
+A lightweight Python application powered by **Flask** and **SQLite**, designed for local development using **VS Code**.
 
----
+----------
+
+## 📋 Table of Contents
+
+-   [🛠 Prerequisites](#-prerequisites)
+    
+-   [💡 Recommended VS Code Extensions](#-recommended-vs-code-extensions)
+    
+-   [🚀 Setup Steps](#-setup-steps)
+    
+    -   [1️⃣ Clone the Repository](#1%EF%B8%8F%E2%83%A3-clone-the-repository)
+        
+    -   [2️⃣ Open in VS Code](#2%EF%B8%8F%E2%83%A3-open-in-vs-code)
+        
+    -   [3️⃣ Install Python Dependencies](#3%EF%B8%8F%E2%83%A3-install-python-dependencies)
+        
+    -   [4️⃣ Environment Variables (Optional)](#4%EF%B8%8F%E2%83%A3-environment-variables-optional)
+        
+    -   [5️⃣ Database Setup (SQLite)](#5%EF%B8%8F%E2%83%A3-database-setup-sqlite)
+        
+-   [▶️ Running the Application](#%EF%B8%8F-running-the-application)
+    
+-   [🌐 Accessing the App](#-accessing-the-app)
+    
+
+----------
 
 ## 🛠 Prerequisites
 
-Make sure the following are installed:
+Ensure the following tools are installed on your system:
 
-- **Git**: Version control tool  
-  👉 [Download Git](https://git-scm.com/downloads)
+Tool
 
-- **Python & pip**: Programming language and its package installer  
-  👉 [Download Python](https://www.python.org/downloads/)
+Purpose
 
-- **VS Code**: Code editor / IDE  
-  👉 [Download VS Code](https://code.visualstudio.com/download)
+Download Link
 
-- **SQLite**: No separate installation is usually needed—it’s bundled with Python or your framework (e.g., Django, Flask)
+Git
 
----
+Version control
+
+[Download Git](https://git-scm.com/downloads)
+
+Python + pip
+
+Programming language + packages
+
+[Download Python](https://www.python.org/downloads/)
+
+VS Code
+
+Code editor / IDE
+
+[Download VS Code](https://code.visualstudio.com/download)
+
+SQLite
+
+Lightweight database
+
+_(Usually comes bundled with Python or Flask)_
+
+----------
 
 ## 💡 Recommended VS Code Extensions
 
-For a smoother development experience:
+Install these extensions from the VS Code Marketplace:
 
-- **Python** (by Microsoft)
-- **SQLite** (e.g., "SQLite" by alexcvzz)
+-   ✅ **Python** (by Microsoft)
+    
+-   ✅ **SQLite** (e.g., _SQLite_ by _alexcvzz_)
+    
 
----
+----------
 
 ## 🚀 Setup Steps
 
 ### 1️⃣ Clone the Repository
 
-```bash
-git clone https://github.com/<your-username>/<your-repository-name>.git 
-cd <your-repository-name> #cd DeepFence
-Replace <your-username> and <your-repository-name> with your actual GitHub details.  ### https://github.com/bairuboinaramadevi/DeepFence.git
-
-2️⃣ Open in VS Code
 bash
-Copy
-Edit
-code .
-If code . doesn't work, open VS Code manually and go to File > Open Folder...
 
-3️⃣ Install Python Dependencies
-It's best to use a virtual environment:
+CopyEdit
+
+`git clone https://github.com/bairuboinaramadevi/DeepFence.git cd DeepFence` 
+
+----------
+
+### 2️⃣ Open in VS Code
 
 bash
-Copy
-Edit
-# Create a virtual environment
-python -m venv venv
 
-# Activate it
-# On macOS/Linux:
-source venv/bin/activate
+CopyEdit
 
-# On Windows (Command Prompt):
-venv\Scripts\activate.bat
+`code .` 
 
-# On Windows (PowerShell):
-.\venv\Scripts\Activate.ps1
+If `code .` doesn't work, manually open VS Code and go to:  
+**File > Open Folder > Select `DeepFence`**
 
-# Install dependencies
-pip install -r requirements.txt
-📝 Tip: If VS Code asks you to select a Python interpreter, choose the one inside your venv.
+----------
 
-4️⃣ Environment Variables (If Applicable)
-If there's a .env.example file:
+### 3️⃣ Install Python Dependencies
+
+We recommend using a **virtual environment**:
 
 bash
-Copy
-Edit
-cp .env.example .env
-Edit .env and fill in any required variables like API keys, ports, etc.
 
-5️⃣ Database Setup (SQLite)
-No installation is needed for SQLite.
+CopyEdit
 
-If your app uses database migrations:
+`# Create virtual environment python -m venv venv # Activate it  # macOS / Linux  source venv/bin/activate # Windows - Command Prompt venv\Scripts\activate.bat # Windows - PowerShell .\venv\Scripts\Activate.ps1 # Install dependencies pip install -r requirements.txt` 
 
-For Flask (with Flask-Migrate):
+> 🧠 _If prompted in VS Code, choose the Python interpreter inside `venv`._
+
+----------
+
+### 4️⃣ Environment Variables (Optional)
+
+If the project contains a `.env.example` file:
+
 bash
-Copy
-Edit
-flask db init       # only once
-flask db migrate
-flask db upgrade
-These commands will create the SQLite file (e.g., db.sqlite3) and tables.
 
-▶️ Running the Application
-Make sure your virtual environment is active before running the app.
+CopyEdit
 
-From Terminal
+`cp .env.example .env` 
+
+Update `.env` with your configuration values (e.g., API keys, ports, database path).
+
+----------
+
+### 5️⃣ Database Setup (SQLite)
+
+No separate installation needed!
+
+If your app uses **Flask-Migrate**, run:
+
 bash
-Copy
-Edit
-# On macOS/Linux
-source venv/bin/activate
 
-# On Windows
-venv\Scripts\activate.bat
+CopyEdit
 
-# Run the app
-python <your_main_app_file>.py
+`flask db init # (Run only once) flask db migrate
+flask db upgrade` 
 
+This will generate the database file (e.g., `db.sqlite3`) and tables.
 
-# For Flask:
-flask run
-From VS Code (Run and Debug)
-Open Run and Debug view (Ctrl+Shift+D / Cmd+Shift+D).
+----------
 
-Select the right config from dropdown (if launch.json exists).
+## ▶️ Running the Application
 
-Press the green ▶️ Start button.
+Ensure your **virtual environment is activated**:
 
-🌐 Accessing the App
-Once running, open your browser and go to:
+bash
 
-http://localhost:5000 (Flask default)
+CopyEdit
 
-Check your terminal for the exact URL and port.
+`# macOS / Linux  source venv/bin/activate # Windows venv\Scripts\activate.bat` 
 
+Then run:
+
+bash
+
+CopyEdit
+
+`python <your_main_app_file>.py # OR for Flask apps: flask run` 
+
+----------
+
+## 🌐 Accessing the App
+
+Once running, navigate to:
+
+arduino
+
+CopyEdit
+
+`http://localhost:5000` 
+
+> ℹ️ Check your terminal for the exact URL and port.
+
+----------
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
+
+----------
+
+## 📄 License
+
+This project is licensed under the MIT License. See LICENSE for details.
